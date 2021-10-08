@@ -1,0 +1,16 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY porta_or IS
+ 	PORT
+	(
+	a, b : IN BIT;
+	x: BUFFER BIT;
+	s : OUT BIT
+	);
+END porta_or;
+ARCHITECTURE por OF porta_or IS
+BEGIN
+	x <= a OR b;
+	s <= NOT x;
+END por;
