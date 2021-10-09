@@ -1,0 +1,32 @@
+// porta or
+fn main() {
+    let (mut a, mut b): (bool, bool); 
+    let mut x :bool;              
+    let mut s :bool;             
+    
+    // true = 1 false = 0
+    
+    a = false;                 
+    b = false;
+    x = a || b;
+    s = !x;
+    println!("{}", s);
+
+    a = false;                 
+    b = true;
+    x = a || b;
+    s = !x;
+    println!("{}", s);
+    
+    a = true;                 
+    b = false;
+    x = a || b;
+    s = !x;
+    println!("{}", s);
+    
+    a = true;                 
+    b = true;
+    x = a || b;
+    s = !x;
+    println!("{}", s);  
+}
