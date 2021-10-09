@@ -20,5 +20,5 @@ int main() {
 	    x = false ;
 	}c = !x;
 
-	printf("NOT(A OR B): %d", c);					//saida
+	printf("NOT(A OR B): %d", c);	//saida
 }
